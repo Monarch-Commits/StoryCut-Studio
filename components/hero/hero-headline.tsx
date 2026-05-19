@@ -1,7 +1,7 @@
 export function HeroHeadline() {
   return (
     // NAGDAGDAG NG "relative z-10" DITO:
-    <div className="relative z-10 mb-8 text-center lg:mb-0">
+    <div className="relative z-10 text-center">
       <p className="text-muted-foreground mb-3 text-xs tracking-[0.2em] sm:text-sm lg:mb-4">
         WELCOME TO MY WORLD <span className="inline-block">👋</span>
       </p>

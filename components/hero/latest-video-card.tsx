@@ -3,7 +3,7 @@ import { Play } from 'lucide-react';
 
 export function LatestVideoCard() {
   return (
-    <div className="bg-card/70 border-border hover:border-primary/50 group w-96 overflow-hidden rounded-xl border backdrop-blur-sm transition-colors">
+    <div className="bg-card/70 border-border hover:border-primary/50 group z-100 w-full max-w-sm overflow-hidden rounded-xl border backdrop-blur-sm transition-colors">
       <div className="flex gap-4 p-3">
         {/* Thumbnail */}
         <div className="bg-secondary relative w-36 flex-shrink-0 overflow-hidden rounded-lg">
