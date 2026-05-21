@@ -4,7 +4,7 @@ import Test from '@/components/test';
 
 export default function Home() {
   return (
-    <main className="bg-background mx-auto min-h-full w-full max-w-[1300px] border">
+    <main className="bg-background mx-auto min-h-screen w-full max-w-[1300px] border">
       <Navigation />
       <HeroSection />
       <Test />

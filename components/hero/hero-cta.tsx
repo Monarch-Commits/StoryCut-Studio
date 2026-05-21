@@ -2,7 +2,7 @@ import { Play } from 'lucide-react';
 
 export function HeroCta() {
   return (
-    <div className="w-full max-w-md border text-center md:text-start">
+    <div className="w-full max-w-md text-center md:text-start">
       <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
         I share my journey in filmmaking, productivity, and building a life of
         purpose. New videos every week.

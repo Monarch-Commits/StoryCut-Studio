@@ -7,7 +7,7 @@ const stats = [
 
 export function StatsGrid() {
   return (
-    <div className="z-100 grid w-full grid-cols-2 gap-4 border p-2 md:max-w-md md:grid-cols-4">
+    <div className="z-100 grid w-full grid-cols-2 gap-4 p-2 md:max-w-md md:grid-cols-4">
       {stats.map((stat, index) => (
         <div
           key={stat.label}
