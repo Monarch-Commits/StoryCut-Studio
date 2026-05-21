@@ -9,7 +9,7 @@ export function HeroSection() {
     <section className="bg-background relative flex h-full w-full flex-col items-center justify-start gap-16 border pt-30 md:justify-start md:gap-20">
       <HeroHeadline />
 
-      <div className="z-100 flex w-full flex-col items-center justify-start gap-8 border px-8 lg:items-start">
+      <div className="z-90 flex w-full flex-col items-center justify-start gap-8 border px-4 sm:px-8 lg:items-start">
         <HeroCta />
         <div className="relative flex w-full flex-col items-center justify-center gap-4 border pb-20 md:justify-between lg:flex-row">
           <StatsGrid />
