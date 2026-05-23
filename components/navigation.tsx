@@ -11,6 +11,7 @@ import {
   Instagram,
   Twitter,
 } from 'lucide-react';
+import { Button } from './ui/button';
 
 const navLinks = [
   { name: 'Home', href: '#' },
@@ -39,7 +40,7 @@ export function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-8 lg:flex">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -58,7 +59,7 @@ export function Navigation() {
           {/* Right Side - Social + CTA */}
           <div className="flex items-center gap-3 sm:gap-4">
             {/* Social Icons - Hidden on mobile */}
-            <div className="hidden items-center gap-3 sm:flex">
+            <div className="hidden items-center gap-3 md:flex">
               <Link
                 href="#"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -85,16 +86,16 @@ export function Navigation() {
             {/* CTA Button */}
             <Link
               href="#contact"
-              className="border-border text-foreground hover:bg-secondary group hidden items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-colors sm:flex"
+              className="border-border text-foreground hover:bg-secondary group hidden items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-colors md:flex"
             >
               WORK WITH ME
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
 
             {/* Mobile Menu Button */}
-            <button
+            <Button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-foreground p-2 md:hidden"
+              className="text-foreground p-2 lg:hidden"
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -102,13 +103,13 @@ export function Navigation() {
               ) : (
                 <Menu className="h-6 w-6" />
               )}
-            </button>
+            </Button>
           </div>
         </div>
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="bg-card/95 border-border absolute top-16 right-4 left-4 mt-2 rounded-xl border p-4 backdrop-blur-lg md:hidden">
+          <div className="bg-card/95 border-border absolute top-16 right-4 left-4 mt-2 rounded-xl border p-4 backdrop-blur-lg lg:hidden">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link

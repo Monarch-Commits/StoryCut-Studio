@@ -1,12 +1,12 @@
 export function HeroHeadline() {
   return (
     // NAGDAGDAG NG "relative z-10" DITO:
-    <div className="relative z-10 text-center">
+    <div className="relative z-20 text-center">
       <p className="text-muted-foreground mb-3 text-xs tracking-[0.2em] sm:text-sm lg:mb-4">
         WELCOME TO MY WORLD <span className="inline-block">👋</span>
       </p>
 
-      <h1 className="text-foreground font-[family-name:var(--font-oswald)] text-3xl leading-[1.05] font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+      <h1 className="text-foreground font-(family-name:--font-oswald) text-3xl leading-[1.05] font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
         I CREATE VIDEOS THAT
         <br />
         <span className="text-primary relative inline-block">
