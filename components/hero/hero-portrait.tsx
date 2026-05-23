@@ -9,10 +9,10 @@ export function HeroPortrait() {
         width={1400}
         height={1400}
         priority
-        className="h-auto w-full max-w-2xl object-contain"
+        className="z-20 h-auto w-full max-w-2xl object-contain"
       />
 
-      <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black from-0% to-transparent to-20%" />
+      <div className="pointer-events-none absolute inset-0 z-100 bg-linear-to-t from-black from-0% to-transparent to-20%" />
     </div>
   );
 }

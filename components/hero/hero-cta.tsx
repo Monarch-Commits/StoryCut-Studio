@@ -1,5 +1,4 @@
 import { Play } from 'lucide-react';
-import { Button } from '../ui/button';
 
 export function HeroCta() {
   return (
@@ -10,16 +9,13 @@ export function HeroCta() {
       </p>
 
       <div className="flex flex-col justify-center gap-3 md:flex-row lg:justify-start">
-        <Button className="bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center justify-center gap-2 rounded-md px-5 py-2.5 text-sm font-semibold transition-all">
+        <button className="bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center justify-center gap-2 rounded-md px-5 py-2.5 text-sm font-semibold transition-all">
           <Play className="h-4 w-4 fill-current" />
           WATCH LATEST VIDEO
-        </Button>
-        <Button
-          variant={'secondary'}
-          className="border-border text-foreground hover:bg-secondary inline-flex items-center justify-center rounded-md border px-5 py-2.5 text-sm font-semibold transition-colors"
-        >
+        </button>
+        <button className="border-border text-foreground hover:bg-secondary inline-flex items-center justify-center rounded-md border px-5 py-2.5 text-sm font-semibold transition-colors">
           EXPLORE CHANNEL
-        </Button>
+        </button>
       </div>
     </div>
   );
