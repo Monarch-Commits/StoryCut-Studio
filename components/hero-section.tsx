@@ -7,8 +7,9 @@ import { FloatingVideoCards } from './hero/floating-video-cards';
 
 export function HeroSection() {
   return (
-    <section className="bg-background relative flex h-full w-full flex-col items-center justify-start gap-16 pt-30 md:justify-start xl:gap-40">
+    <section className="bg-background relative flex min-h-dvh w-full flex-col items-center justify-start gap-16 pt-30 md:justify-start lg:gap-30 xl:gap-40">
       <HeroHeadline />
+
       <FloatingVideoCards />
       <div className="z-50 flex w-full flex-col items-center justify-start gap-8 px-4 sm:px-8 lg:items-start">
         <HeroCta />
