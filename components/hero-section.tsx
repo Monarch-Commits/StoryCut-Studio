@@ -7,15 +7,14 @@ import { FloatingVideoCards } from './hero/floating-video-cards';
 
 export function HeroSection() {
   return (
-    <section className="bg-background relative flex min-h-dvh w-full flex-col items-center justify-start gap-16 overflow-hidden py-16 md:justify-start md:py-28 lg:gap-30 lg:py-32 xl:gap-40">
+    <section className="bg-background items-between relative mx-auto flex h-auto w-full max-w-7xl flex-col justify-center gap-16 overflow-hidden px-4 py-24 sm:px-8 md:py-32 lg:gap-30 lg:px-12 lg:py-40">
       <HeroHeadline />
-
+      <HeroPortrait />
       <FloatingVideoCards />
-      <div className="z-50 flex w-full flex-col items-center justify-start gap-8 lg:items-start">
+      <div className="z-50 mx-auto flex w-full flex-col items-center justify-start gap-8 lg:items-start">
         <HeroCta />
-        <div className="relative flex w-full flex-col items-center justify-center gap-4 pb-20 md:justify-between lg:flex-row">
+        <div className="relative flex w-full flex-col items-center justify-center gap-4 pb-0 md:justify-between md:pb-20 lg:flex-row">
           <StatsGrid />
-          <HeroPortrait />
           <LatestVideoCard />
         </div>
       </div>

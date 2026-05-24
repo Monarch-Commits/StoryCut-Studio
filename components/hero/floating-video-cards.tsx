@@ -58,7 +58,7 @@ const videoCards: VideoCard[] = [
 
 export function FloatingVideoCards() {
   return (
-    <div className="pointer-events-none absolute inset-0 z-10 mx-auto hidden h-full w-full max-w-7xl md:block">
+    <div className="pointer-events-none absolute inset-0 z-10 mx-auto h-full w-full max-w-7xl md:block">
       {videoCards.map((card) => (
         <div
           key={card.id}
