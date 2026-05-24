@@ -11,7 +11,7 @@ export function StatsGrid() {
       {stats.map((stat, index) => (
         <div
           key={stat.label}
-          className={`flex flex-col items-center justify-center md:items-start ${index !== 0 ? 'md:border-border/50 pl-4 md:border-l' : ''} `}
+          className={`flex flex-col items-center justify-center xl:items-start ${index !== 0 ? 'md:border-border/50 pl-4 md:border-l' : ''} `}
         >
           <p className="text-foreground text-2xl font-bold">{stat.value}</p>
 

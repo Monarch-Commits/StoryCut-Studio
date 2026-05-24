@@ -19,7 +19,7 @@ const videoCards: VideoCard[] = [
     duration: '12:45',
     imageSrc:
       'https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=500&auto=format&fit=crop',
-    positionClass: 'left-4 top-[22%] w-44 xl:w-52 opacity-40',
+    positionClass: 'left-4 top-[22%] w-44 xl:w-52 xl:hidden block opacity-40',
     showCenterPlay: true,
     layoutType: 'standard',
   },
@@ -58,7 +58,7 @@ const videoCards: VideoCard[] = [
 
 export function FloatingVideoCards() {
   return (
-    <div className="pointer-events-none absolute inset-0 z-10 mx-auto h-full w-full max-w-7xl md:block">
+    <div className="pointer-events-none absolute inset-0 z-10 mx-auto hidden h-full w-full max-w-7xl md:block">
       {videoCards.map((card) => (
         <div
           key={card.id}
