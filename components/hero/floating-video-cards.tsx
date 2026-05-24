@@ -50,8 +50,8 @@ const videoCards: VideoCard[] = [
     duration: '',
     imageSrc:
       'https://images.unsplash.com/photo-1478812954026-9c750f0e89fc?q=80&w=500&auto=format&fit=crop',
-    positionClass: 'right-2 top-[72%] w-36 xl:w-44 opacity-15',
-    imgEffect: 'brightness-[0.25] grayscale',
+    positionClass: 'left-20 top-[52%] w-36 xl:w-44 opacity-35',
+    imgEffect: 'brightness-[0.45] grayscale',
     layoutType: 'minimal',
   },
 ];

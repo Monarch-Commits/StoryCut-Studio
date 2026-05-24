@@ -1,7 +1,7 @@
 import { Navigation } from '@/components/navigation';
 import { HeroSection } from '@/components/hero-section';
 import FeaturedVideos from '@/components/FeaturedVideos';
-import EfferdBoxes from '@/components/Box';
+import CreatorStory from '@/components/about';
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <FeaturedVideos />
-      <EfferdBoxes />
+      {/* <CreatorStory /> */}
     </main>
   );
 }
