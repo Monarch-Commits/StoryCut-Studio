@@ -80,7 +80,7 @@ export function Navigation() {
           {/* Right Side */}
           <div className="flex items-center gap-3 sm:gap-4">
             {/* CTA */}
-            <div className="flex justify-center">
+            <div className="hidden justify-center md:flex">
               <a
                 href="#work"
                 className="group relative inline-flex items-center justify-center border border-white/20 bg-white/5 px-8 py-3 text-sm text-white backdrop-blur-md transition-all duration-300 hover:bg-white/10"
