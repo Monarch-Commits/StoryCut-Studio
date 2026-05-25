@@ -1,3 +1,5 @@
+'use client';
+import { motion } from 'framer-motion';
 import { Plus } from 'lucide-react';
 import Image from 'next/image';
 
@@ -50,9 +52,13 @@ export default function FeaturedVideos() {
 
         {/* 2 x 2 Grid */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {featuredVideos.map((video) => (
-            <div
+          {featuredVideos.map((video, i) => (
+            <motion.div
               key={video.id}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: i * 0.1 }}
+              viewport={{ once: true }}
               className="group overflow-hidden border border-white/10 bg-zinc-900 transition-transform duration-200 ease-out hover:scale-[1.01]"
             >
               {/* Image */}
@@ -81,7 +87,7 @@ export default function FeaturedVideos() {
                   Watch cinematic content
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
         {/* CTA Button */}

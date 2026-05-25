@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import { Plus } from 'lucide-react';
 import Image from 'next/image';
 
@@ -62,8 +63,12 @@ export default function GalleryShowcase() {
         {/* Masonry-style grid */}
         <div className="columns-1 gap-5 space-y-5 sm:columns-2 lg:columns-3">
           {gallery.map((item, i) => (
-            <div
+            <motion.div
               key={i}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: i * 0.1 }}
+              viewport={{ once: true }}
               className="relative break-inside-avoid overflow-hidden border border-white/10 bg-[#111] transition-transform duration-100 ease-out hover:scale-[1.02]"
             >
               <div className="relative w-full">
@@ -78,7 +83,7 @@ export default function GalleryShowcase() {
                 {/* Soft cinematic overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

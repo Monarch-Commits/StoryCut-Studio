@@ -62,7 +62,7 @@ export function FloatingVideoCards() {
       {videoCards.map((card) => (
         <div
           key={card.id}
-          className={`absolute overflow-hidden rounded-xl border border-white/10 bg-black/40 shadow-2xl backdrop-blur-md transition-all duration-500 hover:opacity-90 ${card.positionClass}`}
+          className={`absolute overflow-hidden border border-white/10 bg-black/40 shadow-2xl backdrop-blur-md transition-all duration-500 hover:opacity-90 ${card.positionClass}`}
         >
           {/* CARD THUMBNAIL AREA */}
           <div className="relative aspect-video w-full overflow-hidden">

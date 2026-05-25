@@ -111,7 +111,7 @@ export function Navigation() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="bg-card/95 border-border absolute top-16 right-4 left-4 mt-2 rounded-xl border p-4 backdrop-blur-lg lg:hidden">
+          <div className="bg-card/95 border-border absolute top-16 right-4 left-4 mt-2 border p-4 backdrop-blur-lg lg:hidden">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link
@@ -150,14 +150,19 @@ export function Navigation() {
                   <Twitter className="h-5 w-5" />
                 </Link>
               </div>
-              <Link
-                href="#contact"
-                onClick={() => setIsOpen(false)}
-                className="border-border text-foreground hover:bg-secondary flex items-center justify-center gap-2 rounded-full border px-4 py-2.5 text-sm font-medium transition-colors"
-              >
-                WORK WITH ME
-                <ArrowRight className="h-4 w-4" />
-              </Link>
+              <div className="flex justify-center md:hidden">
+                <a
+                  href="#work"
+                  className="group relative inline-flex w-full items-center justify-center border border-white/20 bg-white/5 px-8 py-3 text-sm text-white backdrop-blur-md transition-all duration-300 hover:bg-white/10"
+                >
+                  {/* corner plus icons */}
+                  <Plus className="pointer-events-none absolute -top-2 -left-2 h-4 w-4 text-white" />
+                  <Plus className="pointer-events-none absolute -top-2 -right-2 h-4 w-4 text-white" />
+                  <Plus className="pointer-events-none absolute -bottom-2 -left-2 h-4 w-4 text-white" />
+                  <Plus className="pointer-events-none absolute -right-2 -bottom-2 h-4 w-4 text-white" />
+                  Let’s Work Together
+                </a>
+              </div>
             </div>
           </div>
         )}
