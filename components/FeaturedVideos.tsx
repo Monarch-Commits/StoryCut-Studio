@@ -53,7 +53,7 @@ export default function FeaturedVideos() {
           {featuredVideos.map((video) => (
             <div
               key={video.id}
-              className="group overflow-hidden border border-white/10 bg-zinc-900"
+              className="group overflow-hidden border border-white/10 bg-zinc-900 transition-transform duration-200 ease-out hover:scale-[1.01]"
             >
               {/* Image */}
               <div className="relative aspect-video">
@@ -83,6 +83,16 @@ export default function FeaturedVideos() {
               </div>
             </div>
           ))}
+        </div>
+        {/* CTA Button */}
+        <div className="mt-12 flex justify-center">
+          <button className="relative border border-white/20 bg-white/5 px-8 py-3 text-sm text-white backdrop-blur-md transition-all duration-100 hover:bg-white/10">
+            <Plus className="absolute -top-2 -left-2 h-4 w-4 text-white" />
+            <Plus className="absolute -top-2 -right-2 h-4 w-4 text-white" />
+            <Plus className="absolute -bottom-2 -left-2 h-4 w-4 text-white" />
+            <Plus className="absolute -right-2 -bottom-2 h-4 w-4 text-white" />
+            View All Videos
+          </button>
         </div>
       </div>
     </section>

@@ -3,10 +3,10 @@ import { Play } from 'lucide-react';
 
 export function LatestVideoCard() {
   return (
-    <div className="bg-card/70 border-border hover:border-primary/50 group z-100 w-full max-w-sm overflow-hidden rounded-xl border backdrop-blur-sm transition-colors">
+    <div className="bg-card/70 border-border hover:border-primary/50 group z-100 w-full max-w-sm overflow-hidden border backdrop-blur-sm transition-colors">
       <div className="flex gap-4 p-3">
         {/* Thumbnail */}
-        <div className="bg-secondary relative w-36 flex-shrink-0 overflow-hidden rounded-lg">
+        <div className="bg-secondary relative w-36 flex-shrink-0 overflow-hidden">
           <div className="relative aspect-video">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_qbaarcqbaarcqbaa-DGLa7wPR3YytVD7kThmZBopc7ti9LD.png"
