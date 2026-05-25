@@ -5,11 +5,11 @@ import CreatorStory from '@/components/about';
 
 export default function Home() {
   return (
-    <main className="bg-background mx-auto w-full max-w-7xl border">
+    <main className="bg-background mx-auto w-full max-w-7xl border px-2 xl:px-0">
       <Navigation />
       <HeroSection />
       <FeaturedVideos />
-      {/* <CreatorStory /> */}
+      <CreatorStory />
     </main>
   );
 }
