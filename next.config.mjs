@@ -22,6 +22,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'images.unsplash.com', // Gagamit tayo ng Unsplash para sa sample direct links
       },
+      {
+        protocol: 'https',
+        hostname: 'plus.unsplash.com', // Gagamit tayo ng Unsplash para sa sample direct links
+      },
     ],
   },
 };

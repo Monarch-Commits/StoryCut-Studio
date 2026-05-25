@@ -2,16 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import {
-  Menu,
-  X,
-  Play,
-  ArrowRight,
-  Youtube,
-  Instagram,
-  Twitter,
-  Plus,
-} from 'lucide-react';
+import { Menu, X, Play, Youtube, Instagram, Twitter, Plus } from 'lucide-react';
 import { Button } from './ui/button';
 
 const navLinks = [
@@ -59,7 +50,7 @@ export function Navigation() {
               <Play className="text-primary-foreground h-3 w-3 fill-current" />
             </div>
             <span className="text-sm font-bold tracking-wide sm:text-base">
-              ALEX RIVERA
+              Monarch
             </span>
             <span className="bg-primary h-1.5 w-1.5 rounded-full" />
           </Link>

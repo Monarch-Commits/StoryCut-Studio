@@ -15,7 +15,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: 'Alex Rivera | Filmmaker & Content Creator',
+  title: 'Monarch | Filmmaker & Content Creator',
   description:
     'I create videos that inspire and impact. Join me on my journey in filmmaking, productivity, and building a life of purpose.',
   icons: {

@@ -1,22 +1,38 @@
+'use client';
+
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Play } from 'lucide-react';
 
 export function LatestVideoCard() {
+  const easeOutCubic = [0.215, 0.61, 0.355, 1] as const;
+
   return (
-    <div className="bg-card/70 border-border hover:border-primary/50 group z-100 w-full max-w-sm overflow-hidden border backdrop-blur-sm transition-colors">
+    <motion.div
+      initial={{ opacity: 0, y: 30, scale: 0.98 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ duration: 0.8, delay: 0.5, ease: easeOutCubic }}
+      viewport={{ once: true }}
+      whileHover={{ y: -4, transition: { duration: 0.2 } }}
+      className="bg-card/70 border-border hover:border-primary/50 group z-100 w-full max-w-sm cursor-pointer overflow-hidden border backdrop-blur-sm transition-all duration-300"
+    >
       <div className="flex gap-4 p-3">
-        {/* Thumbnail */}
-        <div className="bg-secondary relative w-36 flex-shrink-0 overflow-hidden">
+        {/* Thumbnail Container */}
+        <div className="bg-secondary relative w-36 flex-shrink-0 overflow-hidden rounded-xs">
           <div className="relative aspect-video">
+            {/* Lalaki nang bahagya ang image at liliwanag kapag hinover ang card */}
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_qbaarcqbaarcqbaa-DGLa7wPR3YytVD7kThmZBopc7ti9LD.png"
               alt="How I Stay Productive While Traveling"
               fill
-              className="object-cover opacity-80"
+              className="object-cover opacity-80 transition-all duration-500 ease-out group-hover:scale-105 group-hover:opacity-100"
             />
-            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 bg-black/30 transition-opacity duration-300 group-hover:opacity-10" />
+
+            {/* Play Button Overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="bg-primary flex h-10 w-10 items-center justify-center rounded-full transition-transform group-hover:scale-110">
+              {/* Ginamitan natin ng Tailwind transition na sumasagot sa group-hover */}
+              <div className="bg-primary group-hover:bg-primary/90 flex h-10 w-10 items-center justify-center rounded-full shadow-lg transition-transform duration-300 ease-out group-hover:scale-110">
                 <Play className="text-primary-foreground h-5 w-5 fill-current" />
               </div>
             </div>
@@ -28,7 +44,7 @@ export function LatestVideoCard() {
           <p className="text-primary mb-1 text-[10px] font-semibold tracking-wider">
             LATEST VIDEO
           </p>
-          <h3 className="text-foreground text-sm leading-tight font-semibold">
+          <h3 className="text-foreground group-hover:text-primary text-sm leading-tight font-semibold transition-colors duration-300">
             How I Stay Productive
             <br />
             While Traveling
@@ -38,6 +54,6 @@ export function LatestVideoCard() {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

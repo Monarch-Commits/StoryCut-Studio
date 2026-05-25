@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Play } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 interface VideoCard {
   id: string;
@@ -59,9 +60,13 @@ const videoCards: VideoCard[] = [
 export function FloatingVideoCards() {
   return (
     <div className="pointer-events-none absolute inset-0 z-10 mx-auto hidden h-full w-full max-w-7xl md:block">
-      {videoCards.map((card) => (
-        <div
+      {videoCards.map((card, i) => (
+        <motion.div
           key={card.id}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: i * 0.1 }}
+          viewport={{ once: true }}
           className={`absolute overflow-hidden border border-white/10 bg-black/40 shadow-2xl backdrop-blur-md transition-all duration-500 hover:opacity-90 ${card.positionClass}`}
         >
           {/* CARD THUMBNAIL AREA */}
@@ -129,7 +134,7 @@ export function FloatingVideoCards() {
               {card.title}
             </div>
           )}
-        </div>
+        </motion.div>
       ))}
     </div>
   );
