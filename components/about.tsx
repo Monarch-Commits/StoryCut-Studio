@@ -6,7 +6,10 @@ import { Plus, ArrowRight } from 'lucide-react'; // Idinagdag ang ArrowRight
 
 export default function CreatorStory() {
   return (
-    <section className="bg-background relative border-y py-16 text-white md:py-24 lg:py-32">
+    <section
+      id="about"
+      className="bg-background relative border-y py-16 text-white md:py-24 lg:py-32"
+    >
       {/* decorative plus icons */}
       <Plus className="absolute -top-2 -left-2 h-4 w-4 text-white" />
       <Plus className="absolute -top-2 -right-2 h-4 w-4 text-white" />

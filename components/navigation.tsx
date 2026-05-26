@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, Play, Youtube, Instagram, Twitter, Plus } from 'lucide-react';
 import { Button } from './ui/button';
+import Image from 'next/image';
 
 const navLinks = [
   { name: 'Home', href: '#' },
@@ -45,14 +46,16 @@ export function Navigation() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-2">
         <div className="bg-background/60 border-border/50 flex h-16 items-center justify-between border-b px-4 backdrop-blur-md">
           {/* Logo */}
-          <Link href="/" className="group flex items-center gap-2">
-            <div className="bg-primary flex h-6 w-6 items-center justify-center rounded-sm">
-              <Play className="text-primary-foreground h-3 w-3 fill-current" />
-            </div>
-            <span className="text-sm font-bold tracking-wide sm:text-base">
-              Monarch
-            </span>
-            <span className="bg-primary h-1.5 w-1.5 rounded-full" />
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/logo.svg"
+              alt="StoryCut Logo"
+              width={50}
+              height={50}
+              className=""
+              priority
+            />
+            <span className="text-foreground text-lg">Monarch</span>
           </Link>
 
           {/* Desktop Nav */}

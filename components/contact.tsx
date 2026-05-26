@@ -5,7 +5,10 @@ import { Plus } from 'lucide-react';
 
 export default function ContactCTA() {
   return (
-    <section className="relative bg-black py-28 text-white sm:py-36">
+    <section
+      id="contact"
+      className="relative bg-black py-28 text-white sm:py-36"
+    >
       <Plus className="absolute -bottom-2 -left-2 z-10 h-4 w-4 text-white" />
       <Plus className="absolute -right-2 -bottom-2 z-10 h-4 w-4 text-white" />
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">

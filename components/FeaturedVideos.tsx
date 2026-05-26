@@ -36,7 +36,10 @@ const featuredVideos = [
 
 export default function FeaturedVideos() {
   return (
-    <section className="relative w-full border-t bg-black py-24 text-white md:py-32 lg:py-40">
+    <section
+      id="videos"
+      className="relative w-full border-t bg-black py-24 text-white md:py-32 lg:py-40"
+    >
       <Plus className="absolute -top-2 -left-2 h-4 w-4 text-white" />
       <Plus className="absolute -top-2 -right-2 h-4 w-4 text-white" />
       <Plus className="absolute -bottom-2 -left-2 h-4 w-4 text-white" />

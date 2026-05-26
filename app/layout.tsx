@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/lightlogo.svg',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/logo.svg',
         media: '(prefers-color-scheme: dark)',
       },
       {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/logo.png',
   },
 };
 
@@ -45,7 +45,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${oswald.variable} bg-background`}
+      className={`${inter.variable} ${oswald.variable} bg-background scroll-smooth`}
     >
       <body className="font-sans antialiased">
         {children}

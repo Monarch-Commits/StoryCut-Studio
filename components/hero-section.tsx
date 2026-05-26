@@ -6,7 +6,10 @@ import { LatestVideoCard } from './hero/latest-video-card';
 
 export function HeroSection() {
   return (
-    <section className="bg-background items-between relative mx-auto flex h-auto w-full flex-col justify-center gap-16 px-4 py-24 sm:px-8 md:py-32 lg:gap-30 lg:px-12 lg:py-40">
+    <section
+      id="home"
+      className="bg-background items-between relative mx-auto flex h-auto w-full flex-col justify-center gap-16 px-4 py-24 sm:px-8 md:py-32 lg:gap-30 lg:px-12 lg:py-40"
+    >
       <HeroHeadline />
       <HeroPortrait />
 

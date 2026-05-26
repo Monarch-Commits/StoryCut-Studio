@@ -13,8 +13,7 @@ export function HeroHeadline() {
         viewport={{ once: true }}
         className="text-muted-foreground mb-3 text-xs tracking-[0.2em] sm:text-sm lg:mb-4"
       >
-        WELCOME TO MY WORLD{' '}
-        <span className="inline-block animate-bounce">👋</span>
+        WELCOME TO MY WORLD
       </motion.p>
 
       {/* Main Headline */}

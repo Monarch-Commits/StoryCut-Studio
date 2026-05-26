@@ -1,10 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const links = [
   { label: 'Home', href: '#' },
-  { label: 'Work', href: '#work' },
+  { label: 'Videos', href: '#videos' },
   { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -31,7 +33,17 @@ export default function Footer() {
           <div className="grid gap-12 md:grid-cols-3">
             {/* Brand */}
             <div>
-              <h3 className="text-lg font-medium tracking-tight">Your Name</h3>
+              <Link href="/" className="flex items-center gap-2">
+                <Image
+                  src="/logo.svg"
+                  alt="StoryCut Logo"
+                  width={50}
+                  height={50}
+                  className=""
+                  priority
+                />
+                <span className="text-foreground text-lg">Monarch</span>
+              </Link>
 
               <p className="mt-4 text-sm leading-relaxed text-white/60">
                 Cinematic creator focused on storytelling, visual emotion, and
